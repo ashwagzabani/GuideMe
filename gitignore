@@ -1,0 +1,8 @@
+# Django #
+
+.env
+*.pyc
+*/__pycache__/*
+*/__pycache__
+*/migrations/*
+<_io.BytesIO object at 0x104e35760>

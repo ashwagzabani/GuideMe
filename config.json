@@ -1,0 +1,5 @@
+{
+    "detect_text": true,
+    "detect_object": false,
+    "find_object": false
+}

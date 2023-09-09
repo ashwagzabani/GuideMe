@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Object Detection</title>
+</head>
+
+<body>
+    <div>
+
+   
+    <h1>Object Detection</h1>
+    <p>Touch anywhere on the screen to start detecting objects.</p>
+    <div>
+        <img src="{% url 'live_camera' %}">
+    </div>
+</div>
+</body>
+<script>
+    function onclick(){
+        console.log("ffff")
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/help/execute_function', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                console.log('Function executed successfully!');
+            }
+        };
+        xhr.send();
+    }
+    document.querySelector("body").onclick = onclick;
+</script>
+</html>
